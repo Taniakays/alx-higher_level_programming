@@ -1,16 +1,2 @@
 #!/bin/bash
-
-# Check if the $PYFILE variable is set
-if [ -z "$PYFILE" ]; then
-  echo "Error: The PYFILE variable is not set. Please set it to the path of your Python script."
-  exit 1
-fi
-
-# Check if the Python file exists
-if [ ! -f "$PYFILE" ]; then
-  echo "Error: The Python script file '$PYFILE' does not exist."
-  exit 1
-fi
-
-# Run the Python script
-python "$PYFILE"
+python3 ./$PYFILE
