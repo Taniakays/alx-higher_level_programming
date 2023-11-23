@@ -1,10 +1,14 @@
-#!/usr/bin/python3
-class Square:
-     def __init__(self, size):
-         self.__size = size  # private instance attribute
-         # Example usage:
-         # Create an instance of Square with size 5
-         square_instance = Square(5)
+ #!/usr/bin/python3
 
-         # Access the private instance attribute
-         print(square_instance._Square__size)
+ """Define a class Square."""
+
+
+ class Square:
+     """Represent a square."""
+
+     def __init__(self, size):
+     """Initialize a new Square.
+     Args:
+     size (int): The size of the new square.
+     """
+     self.__size = size
